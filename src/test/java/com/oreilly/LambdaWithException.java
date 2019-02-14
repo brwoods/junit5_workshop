@@ -33,7 +33,7 @@ public class LambdaWithException {
         });
     }
 
-    @Test @Disabled
+    @Test @Disabled("intentionally disabled")
     void testRunnableWithLambda() {
         assertThrows(Exception.class, () -> System.out.println("Inside lambda"));
     }
